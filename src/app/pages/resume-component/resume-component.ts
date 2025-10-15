@@ -11,14 +11,4 @@ export class ResumeComponent {
 
 
 
-  downloadMyFile(){
-    const link = document.createElement('a');
-    link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'src/assets');
-    link.setAttribute('download', `updated_curriculum_2025.pdf`);
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-}
-
 }
