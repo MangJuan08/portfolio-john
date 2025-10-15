@@ -1,14 +1,19 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, inject, signal } from '@angular/core';
 import { NavbarComponent } from "../../components/navbar-component/navbar-component";
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
-  selector: 'app-resume-component',
-  imports: [NavbarComponent],
-  templateUrl: './resume-component.html',
-  styleUrl: './resume-component.scss'
+  selector: 'app-employment-history-component',
+  imports: [NavbarComponent,MatStepperModule,
+    MatInputModule,MatButtonModule, MatExpansionModule],
+  templateUrl: './employment-history-component.html',
+  styleUrl: './employment-history-component.scss'
 })
-export class ResumeComponent {
-  
+export class EmploymentHistoryComponent {
+readonly panelOpenState = signal(false);
 constructor(private elementRef: ElementRef) {
   
 }
@@ -26,4 +31,7 @@ downloadResume() {
 
 /*
 https://drive.google.com/file/d/1wEVdNTu_yU5sdawvFpcSb5pQL-Gjqzol/view?usp=drive_link*/
+
+
+  isLinear = false;
 }
