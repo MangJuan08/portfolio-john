@@ -8,7 +8,13 @@ import { NavbarComponent } from "../../components/navbar-component/navbar-compon
   styleUrl: './resume-component.scss'
 })
 export class ResumeComponent {
+downloadResume() {
+    const link = document.createElement('a');
+    link.download = 'updated_curriculum_2025.pdf';  // Desired file name
+    link.href = 'https://drive.google.com/file/d/1wEVdNTu_yU5sdawvFpcSb5pQL-Gjqzol/view?usp=drive_link';  // Path to your PDF file
+    link.click();
+  }
 
-
-
+/*
+https://drive.google.com/file/d/1wEVdNTu_yU5sdawvFpcSb5pQL-Gjqzol/view?usp=drive_link*/
 }
