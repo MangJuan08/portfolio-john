@@ -1,1 +1,0 @@
-import{a as m}from"./chunk-N6B6LKWO.js";import{F as o,S as t}from"./chunk-27NDTZ62.js";var p=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=o({type:n,selectors:[["app-resume-component"]],decls:1,vars:0,template:function(e,a){e&1&&t(0,"app-navbar-component")},dependencies:[m],encapsulation:2})};export{p as ResumeComponent};
