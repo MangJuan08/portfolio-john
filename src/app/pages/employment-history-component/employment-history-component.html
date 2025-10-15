@@ -2,96 +2,16 @@
 
 <div class="container">
     <br><br><br>
-
     <div class="row">
         <div class="col-md-4">
-
         </div>
         <div class="col-md-4 text-center">
             <h1>My Employment History</h1>
             <h4>Il riassunto delle mie esperienze lavorative</h4>
         </div>
     </div>
-    <br><br><br>
-    <div class="row">
+    @for(experience of workingExperiences; track $index) {
+    <app-working-experience-component [experience]="experience"></app-working-experience-component>
+    }
 
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            FULL STACK DEVELOPER – 03/02/2025 – ATTUALE
-        </div>
-        <div class="col-md-3">
-            <p>• DESCRIZIONE: un portale per la gestione dei dati in ambito assicurativo
-            • COMPITI: Help desk, Bug fixing
-            • TECNOLOGIE: Jira, Java vers. ( 1.8 e 17) e Java Springboot , PL/SQL, Royal, Linux, Angularjs, jenkins,
-            Eclipse, Microservizi
-            • CI/CD: jenkins, github</p>
-        </div>
-
-    </div>
-    <hr>
-    <div class="row">
-
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            JUNIOR FULL STACK DEVELOPER – 14/02/2024 – 13/08/2024
-        </div>
-        <div class="col-md-3">
-            <p>Formazione in Java 8 e 17 utilizzando le tecnologie springboot, jdbc, jpa e postgresql
-            • TIAS0
-            • DESCRIZIONE: gestione dei dati per il cliente in ambito bancario
-            • COMPITI: manutenzione del progetto, modifiche richieste dal cliente
-            • TECNOLOGIE: Java 8, Springboot, Angular 8, Angular, Material, Bootstrap, Postgresql, nodejs,
-            nvm(selezionare la versione del nodejs)
-            • CI/CD: jenkins, bitbucket
-            • ATES0
-            • DESCRIZIONE: salvataggio dei dati su DB
-            • COMPITI: creare uno springbatch e salvare i dati su DB con il batch creato
-            • TECNOLOGIE: Java 8, Spring</p>
-        </div>
-
-    </div>
-    <hr>
-    <div class="row">
-
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            SVILUPPATORE - SUPPORTO/SPECIALIST – 19/10/2019 – 20/08/2023
-        </div>
-        <div class="col-md-3">
-           <p> •SPC
-            • DESCRIZIONE: report giornaliero
-            • COMPITI: mandare i files al cliente
-            • TECNOLOGIE: Excel, Access, Outlook
-            • WARROOM
-            • DESCRIZIONE: un portale per la gestione dei turni
-            • COMPITI: Bug fixing
-            • TECNOLOGIE: Php, xamp, extjs, Sql Developer
-            • VODAFORYOU
-            • DESCRIZIONE: un portale per la gestione degli orari dei negozi
-            • COMPITI: Creazione della tabella con i filtri e con le operazioni CRUD(create,read,update,delete)
-            • TECNOLOGIE: html, css, bootstrap 4, angular 9, typescript, Material UI, nodejs
-            • CD/CDI: Gitlab
-            • CAM
-            • DESCRIZIONE: un portale per la gestione dei dati
-            • COMPITI: Creazione della tabella con i filtri e con le operazioni CRUD(create,read,update,delete)
-            TECNOLOGIE: html, css, bootstrap 4, angular 14, typescript, Material UI, nodejs
-            • CD/CDI: Gitlab </p>
-        </div>
-
-    </div>
-
-    <hr>
-    <div class="row">
-
-        <div class="col-md-2"></div>
-        <div class="col-md-5">
-            STAGISTA FULL STACK DEVELOPER – 20/05/2019 – 31/07/2019
-        </div>
-        <div class="col-md-3">
-            <p>Progetto/Principali attività : creazione di un'app per la gestione di un ristorante e un'app che registra la
-            carta di credito di un utente Tecnologie : html, css, bootstrap 4, angular, typescript, asp.net core webAPI,
-            SQl server, jquery, bootstrap 3 </p>
-        </div>
-
-    </div>
 </div>
