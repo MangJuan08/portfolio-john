@@ -1,1 +1,0 @@
-import{a as p}from"./chunk-LZWPLSBT.js";import{D as o,M as t}from"./chunk-Y7VXNPRZ.js";var s=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=o({type:n,selectors:[["app-skills-component"]],decls:4,vars:0,template:function(e,a){e&1&&t(0,"app-navbar-component")(1,"br")(2,"br")(3,"br")},dependencies:[p],encapsulation:2})};export{s as SkillsComponent};
