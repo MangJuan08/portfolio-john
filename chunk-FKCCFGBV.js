@@ -1,0 +1,1 @@
+import{a}from"./chunk-KPMPH4GE.js";import{$ as o,M as n}from"./chunk-TBUEGIXJ.js";var c=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-contacts-component"]],decls:1,vars:0,template:function(t,s){t&1&&o(0,"app-navbar-component")},dependencies:[a],encapsulation:2})};export{c as ContactsComponent};
