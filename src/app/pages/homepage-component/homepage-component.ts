@@ -3,11 +3,10 @@ import { NavbarComponent } from "../../components/navbar-component/navbar-compon
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
-import { CdkAriaLive } from "../../../../node_modules/@angular/cdk/a11y-module.d";
 
 @Component({
   selector: 'app-homepage-component',
-  imports: [NavbarComponent, MatCardModule, MatButtonModule, MatChipsModule, CdkAriaLive],
+  imports: [NavbarComponent, MatCardModule, MatButtonModule, MatChipsModule],
   templateUrl: './homepage-component.html',
   styleUrl: './homepage-component.scss'
 })
