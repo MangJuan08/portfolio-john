@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from "../../components/navbar-component/navbar-component";
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { TechnologyComponent } from "../../components/technology-component/technology-component";
 
 @Component({
   selector: 'app-skills-component',
-  imports: [NavbarComponent],
+  imports: [NavbarComponent, MatCardModule, MatButtonModule, TechnologyComponent, TechnologyComponent],
   templateUrl: './skills-component.html',
   styleUrl: './skills-component.scss'
 })

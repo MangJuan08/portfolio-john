@@ -3,19 +3,11 @@
 <div class="container">
     <div class="row">
         @for(skill of skills; track $index) {
-        <div class="col-md-3 text-center">
-            <p>{{skill.name}}</p>
-            <p>{{skill.level}}</p>
-            <img src={{skill.imageValue}} />
+        <div class="col-md-3 text-center" style="margin-bottom: 30px;">
+            <app-technology-component [skill]="skill"></app-technology-component>
         </div>
-
         }
-        <!--<div class="col-md-2">
-        </div>
-        <div class="col-md-8 text-center">
-            <h1>My Skills</h1>
-            <app-list-of-skills-components></app-list-of-skills-components>
-        </div>
-        <div class="col-md-2">
-        </div>!-->
     </div>
+
+
+      
