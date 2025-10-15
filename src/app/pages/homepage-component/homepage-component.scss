@@ -1,11 +1,5 @@
-.example-card {
-  max-width: 400px;
-}
 
-.example-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
+
 
 p {
     color: white;
@@ -17,4 +11,12 @@ h1 {
 
 h4 {
     color: white; 
+}
+
+img {
+  border-radius: 50%;
+}
+
+p {
+    font-size: 18px;
 }

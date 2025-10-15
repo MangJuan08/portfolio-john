@@ -2,14 +2,27 @@
 <br><br><br>
 <div class="container">
     <div class="row ">
-        <div class="col-md-4">
-            
-        </div>
-        <div class="col-md-4">
-            <h4>John Bautista</h4>
+        <div class="col-md-5">
+                <h4>John Bautista</h4>
             <h1>JUNIOR FULL STACK DEVELOPER</h1>
             <br>
-            <p><i>---a programmer who loves cycling and travelling and more specialized in Angular</i></p>
+            <p><i>---a programmer who loves cycling and travelling and more specialized in Angular. Programmer during working hours, Cycling when free time</i></p>
+            <p> <b>< programmer /> < cyclist /></b></p>
+            <p>S K I L L S</p>
+             <mat-chip-set aria-label="Dog selection">
+                @for(skill of skills; track $index) {
+                <mat-chip>
+                    <img matChipAvatar src={{skill.imageValue}} alt="Photo of a Shiba Inu"  />
+                    {{skill.value}}
+                </mat-chip>
+                }
+            </mat-chip-set>
+        
+        </div>
+        <div class="col-md-7">
+        
+            <!--<img src="https://i.pinimg.com/474x/5d/b1/37/5db137e0973b20a77384eff400c7e113.jpg">!-->
+            <img src="https://img.freepik.com/free-vector/hacker-operating-laptop-cartoon-icon-illustration-technology-icon-concept-isolated-flat-cartoon-style_138676-2387.jpg?semt=ais_hybrid&w=740&q=80" class="img-fluid"/>
         </div>
     </div>
     <br><br><br>
@@ -21,22 +34,5 @@
         </div>
         <div class="col-md-4">
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-6 ">
-            <mat-chip-set aria-label="Dog selection">
-                @for(skill of skills; track $index) {
-                <mat-chip>
-                    <img matChipAvatar src={{skill.imageValue}} alt="Photo of a Shiba Inu" />
-                    {{skill.value}}
-                </mat-chip>
-                }
-            </mat-chip-set>
-        </div>
-        <div class="col-md-3">
-        </div>
-
     </div>
 </div>
