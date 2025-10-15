@@ -1,13 +1,12 @@
 import { Component, ElementRef, inject, signal } from '@angular/core';
 import { NavbarComponent } from "../../components/navbar-component/navbar-component";
-import {MatStepperModule} from '@angular/material/stepper';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-employment-history-component',
-  imports: [NavbarComponent,MatStepperModule,
+  imports: [NavbarComponent,
     MatInputModule,MatButtonModule, MatExpansionModule],
   templateUrl: './employment-history-component.html',
   styleUrl: './employment-history-component.scss'
