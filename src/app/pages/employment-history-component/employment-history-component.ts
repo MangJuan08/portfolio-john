@@ -19,22 +19,72 @@ export class EmploymentHistoryComponent {
     this.workingExperiences = [
       {
         "role": "FULL STACK DEVELOPER",
-        "description": "• DESCRIZIONE: un portale per la gestione dei dati in ambito assicurativo  COMPITI: Help desk, Bug fixing TECNOLOGIE: Jira, Java vers. (1.8 e 17) e Java Springboot, PL/ SQL, Royal, Linux, Angularjs, jenkins,Eclipse, Microservizi CI / CD: jenkins, github",
+        "companyName": "Prime Welfare Srl",
+        "period": "dal 03/02/2025 – ATTUALE",
+        "projects": [
+          {
+            "name": "ONE",
+            "description": "un portale per la gestione dei dati in ambito assicurativo",
+            "tecnotechnologieslogie": " Jira, Java vers. ( 1.8 e 17) e Java Springboot , PL/SQL, Royal, Linux, Angularjs, jenkins, Eclipse, Microservizi, CI/CD: jenkins, github"
+          }
+        ]
       },
       {
-        "role": "JUNIOR FULL STACK DEVELOPER –",
-        "description": "• DESCRIZIONE: un portale per la gestione dei dati in ambito assicurativo  COMPITI: Help desk, Bug fixing TECNOLOGIE: Jira, Java vers. (1.8 e 17) e Java Springboot, PL/ SQL, Royal, Linux, Angularjs, jenkins,Eclipse, Microservizi CI / CD: jenkins, github",
+        "role": "JUNIOR FULL STACK DEVELOPER",
+        "companyName": "Fidelio Srl",
+        "period": "dal 14/02/2024 al 13/08/2024",
+        "projects": [
+          {
+            "name": "TIAS0",
+            "description": "gestione dei dati per il cliente in ambito bancario",
+            "technologies": "Java 8, Springboot, Angular 8, Angular, Material, Bootstrap, Postgresql, nodejs, nvm(selezionare la versione del nodejs,jenkins, bitbucket"
+          },
+          {
+            "name": "ATES0",
+            "description": "salvataggio dei dati su DB",
+            "technologies": "Java 8, Springboot, Springbatch, Postgresql, jenkins, bitbucket"
+          }
+        ]
 
       },
       {
         "role": "SVILUPPATORE - SUPPORTO/SPECIALIST",
-        "description": "• DESCRIZIONE: un portale per la gestione dei dati in ambito assicurativo  COMPITI: Help desk, Bug fixing TECNOLOGIE: Jira, Java vers. (1.8 e 17) e Java Springboot, PL/ SQL, Royal, Linux, Angularjs, jenkins,Eclipse, Microservizi CI / CD: jenkins, github",
-
+        "companyName": "Aubay Italia S.p.A.",
+        "period": "dal 19/10/2019 – 20/08/2023",
+        "projects": [
+          {
+            "name": "SPC",
+            "description": "report giornaliero",
+            "technologies": "Excel, Access, Outlook"
+          },
+          {
+            "name": "WARROOM",
+            "description": "un portale per la gestione dei turni",
+            "technologies": "Excel, Access, Outlook"
+          },
+          {
+            "name": "VODAFORYOU",
+            "description": "un portale per la gestione degli orari dei negozi",
+            "technologies": "html, css, bootstrap 4, angular 9, typescript, Material UI, nodejs"
+          },
+          {
+            "name": "CAM",
+            "description": "un portale per la gestione dei dati",
+            "technologies": "html, css, bootstrap 4, angular 9, typescript, Material UI, nodejs"
+          }
+        ]
       },
       {
         "role": "STAGISTA FULL STACK DEVELOPER",
-        "description": "• DESCRIZIONE: un portale per la gestione dei dati in ambito assicurativo  COMPITI: Help desk, Bug fixing TECNOLOGIE: Jira, Java vers. (1.8 e 17) e Java Springboot, PL/ SQL, Royal, Linux, Angularjs, jenkins,Eclipse, Microservizi CI / CD: jenkins, github",
-
+        "companyName": "Teorema Engineering Srl",
+        "period": "20/05/2019 – 31/07/2019",
+        "projects": [
+          {
+            "name": "web app ristorante e carta di credito",
+            "description": "creazione di un'app per la gestione di un ristorante e un'app che registra la carta di credito di un utente",
+            "technologies": "html, css, bootstrap 4, angular, typescript, asp.net core webAPI, SQl server, jquery, bootstrap 3"
+          }
+        ]
       }
     ]
 

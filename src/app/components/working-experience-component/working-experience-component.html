@@ -3,10 +3,15 @@
 
         <div class="col-md-2"></div>
         <div class="col-md-5">
-            {{experience.role}}
+           <b>{{ experience.companyName | uppercase }}</b> - {{experience.role}} - <i>{{experience.period}}</i>
         </div>
         <div class="col-md-3">
-            <p>{{experience.description}}</p>
+            <p>PROGETTI SVOLTI</p>
+            @for(prog of experience.projects; track $index) {
+              <b>{{$index+1}} - {{prog.name}} </b><br>
+              <p>{{prog.description}}</p>
+              <i>Technologies: {{prog.technologies}}</i><br><br>
+            }
         </div>
 
     </div>
