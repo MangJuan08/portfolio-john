@@ -8,7 +8,7 @@
         <div class="col-md-3">
             <p>PROGETTI SVOLTI</p>
             @for(prog of experience.projects; track $index) {
-              <b>{{$index+1}} - {{prog.name}} </b><br>
+              <b>{{$index+1}} - {{prog.name | uppercase}} </b><br>
               <p>{{prog.description}}</p>
               <i>Technologies: {{prog.technologies}}</i><br><br>
             }
