@@ -20,7 +20,7 @@ export class EmploymentHistoryComponent {
       {
         "role": "FULL STACK DEVELOPER",
         "companyName": "Prime Welfare Srl",
-        "period": "dal 03/02/2025 – ATTUALE",
+        "period": "dal 03/02/2025 al ATTUALE",
         "projects": [
           {
             "name": "ONE",
@@ -50,7 +50,7 @@ export class EmploymentHistoryComponent {
       {
         "role": "SVILUPPATORE - SUPPORTO/SPECIALIST",
         "companyName": "Aubay Italia S.p.A.",
-        "period": "dal 19/10/2019 – 20/08/2023",
+        "period": "dal 19/10/2019 al 20/08/2023",
         "projects": [
           {
             "name": "SPC",
@@ -77,7 +77,7 @@ export class EmploymentHistoryComponent {
       {
         "role": "STAGISTA FULL STACK DEVELOPER",
         "companyName": "Teorema Engineering Srl",
-        "period": "20/05/2019 – 31/07/2019",
+        "period": "20/05/2019 al 31/07/2019",
         "projects": [
           {
             "name": "web app ristorante e carta di credito",
