@@ -25,7 +25,7 @@ export class EmploymentHistoryComponent {
           {
             "name": "ONE",
             "description": "un portale per la gestione dei dati in ambito assicurativo",
-            "tecnotechnologieslogie": " Jira, Java vers. ( 1.8 e 17) e Java Springboot , PL/SQL, Royal, Linux, Angularjs, jenkins, Eclipse, Microservizi, CI/CD: jenkins, github"
+            "technologies": " Jira, Java vers. ( 1.8 e 17) e Java Springboot , PL/SQL, Royal, Linux, Angularjs, jenkins, Eclipse, Microservizi, CI/CD: jenkins, github"
           }
         ]
       },
