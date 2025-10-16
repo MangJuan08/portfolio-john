@@ -70,7 +70,7 @@ export class EmploymentHistoryComponent {
           {
             "name": "CAM",
             "description": "un portale per la gestione dei dati",
-            "technologies": "html, css, bootstrap 4, angular 9, typescript, Material UI, nodejs"
+            "technologies": "html, css, bootstrap 4, angular 14, typescript, Material UI, nodejs"
           }
         ]
       },
