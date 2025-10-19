@@ -20,8 +20,17 @@ export class ProjectsComponent {
   usually kept as a companion animal or for showing.`;
   public projects: any;
   readonly elementRef = inject(ElementRef);
-  
+  public frontedBool: any;
+  public backendBool: any;
+  public allBool: any;
+  public frontendProjects: any;
+  public backendProjects: any;
+
   constructor() {
+    this.allBool = true;
+    this.frontedBool = false;
+    this.backendBool = false;
+
     this.projects = [
       {
         title: "ToDoListManagement",
@@ -55,11 +64,24 @@ export class ProjectsComponent {
   }
 
   filterProjects(type: any) {
-    if (type === 'all') {
-      return this.projects;
-    } else {
-      return this.projects.filter((proj: any) => proj.type === type);
-    } 
+    if (type.value === 'all') {
+      this.allBool = true;
+      this.frontedBool = false;
+      this.backendBool = false;
+      return this.projects
+    } if (type.value === 'frontend') {
+      this.allBool = false;
+      this.frontedBool = true;
+      this.backendBool = false;
+      this.frontendProjects = this.projects.filter((proj: any) => proj.type === 'frontend');
+      return this.frontendProjects
+    } if (type.value === 'backend') {
+      this.allBool = false;
+      this.frontedBool = false;
+      this.backendBool = true;
+      this.backendProjects = this.projects.filter((proj: any) => proj.type === 'backend');
+      return this.backendProjects
+    }
   }
 
   ngAfterViewInit() {

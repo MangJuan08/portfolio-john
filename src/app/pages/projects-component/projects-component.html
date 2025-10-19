@@ -1,20 +1,22 @@
 <app-navbar-component></app-navbar-component>
 <br><br><br><br><br>
 <div class="container">
-    <!-- <div class="row">
+    <div class="row">
         <div class="col-md-4">
         </div>
-       <div class="col-md-4 text-center">
-            <mat-button-toggle-group [formControl]="projects" aria-label="Font Style">
-                <mat-button-toggle (change)="filterProjects($event)" value="frontend">Bold</mat-button-toggle>
-                <mat-button-toggle (change)="filterProjects($event)" value="backend">Italic</mat-button-toggle>
+        <div class="col-md-4 text-center">
+            <mat-button-toggle-group aria-label="Font Style">
+                <mat-button-toggle (change)="filterProjects($event)" value="all">ALL PROJECTS</mat-button-toggle>
+                <mat-button-toggle (change)="filterProjects($event)" value="frontend">FRONTEND PROJECTS</mat-button-toggle>
+                <mat-button-toggle (change)="filterProjects($event)" value="backend">BACKEND PROJECTS</mat-button-toggle>
             </mat-button-toggle-group>
             <br><br>
         </div>
-    </div>!-->
+    </div>
     <div class="row">
         <h1>Projects</h1>
         <br><br><br><br>
+        @if(allBool) {
         @for(proj of projects; track $index) {
         <div class="col-md-4 cards-col">
             <mat-card class="example-card" appearance="outlined">
@@ -32,5 +34,41 @@
                 </mat-card-content>
             </mat-card>
         </div> }
+        } @if(frontedBool) {
+        @for(proj of frontendProjects; track $index) {
+        <div class="col-md-4 cards-col">
+            <mat-card class="example-card" appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title>{{proj.title}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <br>
+                    <p>{{proj.description}}</p>
+                    <br>
+                    <p>{{proj.type}}</p>
+                    <br>
+                    <a href="{{proj.link}}" target="_blank">View Project</a>
+                    <br><br>
+                </mat-card-content>
+            </mat-card>
+        </div> } }
+         @if(backendBool) {
+        @for(proj of backendProjects; track $index) {
+        <div class="col-md-4 cards-col">
+            <mat-card class="example-card" appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title>{{proj.title}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <br>
+                    <p>{{proj.description}}</p>
+                    <br>
+                    <p>{{proj.type}}</p>
+                    <br>
+                    <a href="{{proj.link}}" target="_blank">View Project</a>
+                    <br><br>
+                </mat-card-content>
+            </mat-card>
+        </div> } }
     </div>
 </div>
