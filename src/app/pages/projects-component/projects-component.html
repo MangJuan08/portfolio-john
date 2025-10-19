@@ -1,0 +1,20 @@
+<app-navbar-component></app-navbar-component>
+<br><br><br><br><br>
+<div class="container">
+    <div class="row">
+        @for(proj of projects; track $index) {
+        <div class="col-md-4" style="margin-bottom: 40px;">
+            <mat-card class="example-card" appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title>{{proj.title}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <br>
+                    <p>{{proj.description}}</p>
+                    <a href="{{proj.link}}" target="_blank">View Project</a>
+                    <br><br>
+                </mat-card-content>
+            </mat-card>
+        </div> }
+    </div>
+</div>

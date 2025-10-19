@@ -8,6 +8,7 @@
             <h1>Il Riassunto delle mie Esperienze Lavorative</h1>
         </div>
     </div>
+    <hr>
     @for(experience of workingExperiences; track $index) {
     <app-working-experience-component [experience]="experience"></app-working-experience-component>
     }
