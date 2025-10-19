@@ -1,49 +1,65 @@
-import { Component, ElementRef } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, inject } from '@angular/core';
 import { NavbarComponent } from "../../components/navbar-component/navbar-component";
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-projects-component',
-  imports: [NavbarComponent, CommonModule, MatCardModule, MatChipsModule, MatProgressBarModule],
+  imports: [NavbarComponent, CommonModule, MatCardModule, MatChipsModule, MatProgressBarModule, MatButtonToggleModule, FormsModule, ReactiveFormsModule],
   templateUrl: './projects-component.html',
-  styleUrl: './projects-component.scss'
+  styleUrl: './projects-component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjectsComponent {
   longText = `The Chihuahua is a Mexican breed of toy dog. It is named for the
   Mexican state of Chihuahua and is among the smallest of all dog breeds. It is
   usually kept as a companion animal or for showing.`;
   public projects: any;
-
-  constructor(private elementRef: ElementRef) {
+  readonly elementRef = inject(ElementRef);
+  
+  constructor() {
     this.projects = [
       {
         title: "ToDoListManagement",
         description: "A web application for managing personal to-do lists and tasks.",
         technologies: ["Angular", "TypeScript", "SCSS", "node.js", "npm", "angular material", "db.json"],
-        link: "https://github.com/MangJuan08/ToDoListManagement"
+        link: "https://github.com/MangJuan08/ToDoListManagement",
+        type: "frontend"
       },
       {
         title: "Application-Restaurant-JavaSpringboot",
         description: "A RESTful API for a restaurant management system.",
         technologies: ["Java", "Spring Boot", "Postgresql", "Hibernate", "Maven", "RESTful API", "Postman"],
-        link: "https://github.com/MangJuan08/Application-Restaurant-JavaSpringboot"
+        link: "https://github.com/MangJuan08/Application-Restaurant-JavaSpringboot",
+        type: "backend"
       },
       {
         title: "reports_BE",
         description: "A backend service for generating and managing reports.",
         technologies: ["Java", "Spring Boot", "MySQL", "Hibernate", "Maven", "RESTful API", "Postman"],
-        link: "https://github.com/MangJuan08/reports_BE"
+        link: "https://github.com/MangJuan08/reports_BE",
+        type: "backend"
       },
       {
         title: "Application-Restaurant-Angular-frontend",
         description: "web application for managing restaurant orders and reservations.",
-        technologies: ["Angular", "TypeScript", "SCSS ","angular material"," RxJS","node.js","npm"],
-        link: "https://github.com/MangJuan08/AppRestaurant"
+        technologies: ["Angular", "TypeScript", "SCSS ", "angular material", " RxJS", "node.js", "npm"],
+        link: "https://github.com/MangJuan08/AppRestaurant",
+        type: "frontend"
       }
     ]
+  }
+
+  filterProjects(type: any) {
+    if (type === 'all') {
+      return this.projects;
+    } else {
+      return this.projects.filter((proj: any) => proj.type === type);
+    } 
   }
 
   ngAfterViewInit() {
