@@ -61,6 +61,8 @@ export class ProjectsComponent {
         type: "frontend"
       }
     ]
+
+    this.projects = this.projects.sort((a:any,b:any) => a.title.localeCompare(b.title))
   }
 
   filterProjects(type: any) {
@@ -68,19 +70,19 @@ export class ProjectsComponent {
       this.allBool = true;
       this.frontedBool = false;
       this.backendBool = false;
-      return this.projects
+      return this.projects.sort((a:any,b:any) => a.title.localeCompare(b.title))
     } if (type.value === 'frontend') {
       this.allBool = false;
       this.frontedBool = true;
       this.backendBool = false;
       this.frontendProjects = this.projects.filter((proj: any) => proj.type === 'frontend');
-      return this.frontendProjects
+      return this.frontendProjects.sort((a:any,b:any) => a.title.localeCompare(b.title))
     } if (type.value === 'backend') {
       this.allBool = false;
       this.frontedBool = false;
       this.backendBool = true;
       this.backendProjects = this.projects.filter((proj: any) => proj.type === 'backend');
-      return this.backendProjects
+      return this.backendProjects.sort((a:any,b:any) => a.title.localeCompare(b.title))
     }
   }
 
