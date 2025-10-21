@@ -5,12 +5,14 @@
         <div class="col-md-4">
         </div>
         <div class="col-md-4 text-center">
-                <h1>{{ 'Projects' | uppercase }}</h1>
-                <br>
+            <h1>{{ 'Projects' | uppercase }}</h1>
+            <br>
             <mat-button-toggle-group aria-label="Font Style">
                 <mat-button-toggle (change)="filterProjects($event)" value="all">ALL PROJECTS</mat-button-toggle>
-                <mat-button-toggle (change)="filterProjects($event)" value="frontend">FRONTEND PROJECTS</mat-button-toggle>
-                <mat-button-toggle (change)="filterProjects($event)" value="backend">BACKEND PROJECTS</mat-button-toggle>
+                <mat-button-toggle (change)="filterProjects($event)" value="frontend">FRONTEND
+                    PROJECTS</mat-button-toggle>
+                <mat-button-toggle (change)="filterProjects($event)" value="backend">BACKEND
+                    PROJECTS</mat-button-toggle>
             </mat-button-toggle-group>
             <br><br>
         </div>
@@ -28,13 +30,12 @@
                     <br>
                     <p>{{proj.description}}</p>
                     <br>
-                    <p>{{proj.type}}</p>
-                    <br>
                     <a href="{{proj.link}}" target="_blank">View Project</a>
                     <br><br>
                 </mat-card-content>
             </mat-card>
-        </div> }
+        </div>
+        }
         } @if(frontedBool) {
         @for(proj of frontendProjects; track $index) {
         <div class="col-md-4 cards-col">
@@ -52,8 +53,9 @@
                     <br><br>
                 </mat-card-content>
             </mat-card>
-        </div> } }
-         @if(backendBool) {
+        </div> }
+        }
+        @if(backendBool) {
         @for(proj of backendProjects; track $index) {
         <div class="col-md-4 cards-col">
             <mat-card class="example-card" appearance="outlined">
@@ -70,6 +72,7 @@
                     <br><br>
                 </mat-card-content>
             </mat-card>
-        </div> } }
+        </div> }
+        }
     </div>
 </div>
