@@ -4,11 +4,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { WorkingExperienceComponent } from "../../components/working-experience-component/working-experience-component";
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-employment-history-component',
   imports: [NavbarComponent,
-    MatInputModule, MatButtonModule, MatExpansionModule, WorkingExperienceComponent],
+    MatInputModule, MatButtonModule, MatExpansionModule, WorkingExperienceComponent, MatCardModule],
   templateUrl: './employment-history-component.html',
   styleUrl: './employment-history-component.scss'
 })
