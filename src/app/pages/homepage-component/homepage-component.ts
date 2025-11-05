@@ -42,6 +42,6 @@ export class HomepageComponent {
 
     ngAfterViewInit() {
         this.elementRef.nativeElement.ownerDocument
-            .body.style.backgroundColor = 'lightgreen';
-    }
+            .body.style.backgroundColor = 'white';
+    } 
 }
