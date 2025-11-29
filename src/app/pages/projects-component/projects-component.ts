@@ -86,8 +86,8 @@ export class ProjectsComponent {
     }
   }
 
-  ngAfterViewInit() {
-    this.elementRef.nativeElement.ownerDocument
-      .body.style.backgroundColor = 'lightgreen';
-  }
+   ngAfterViewInit() {
+        this.elementRef.nativeElement.ownerDocument
+            .body.style.backgroundColor = 'white';
+    } 
 }
