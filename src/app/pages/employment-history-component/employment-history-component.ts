@@ -92,10 +92,10 @@ export class EmploymentHistoryComponent {
 
 
   }
-  ngAfterViewInit() {
-    this.elementRef.nativeElement.ownerDocument
-      .body.style.backgroundColor = 'lightgreen';
-  }
+   ngAfterViewInit() {
+        this.elementRef.nativeElement.ownerDocument
+            .body.style.backgroundColor = 'white';
+    } 
 
   downloadResume() {
     const link = document.createElement('a');
